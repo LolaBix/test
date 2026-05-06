@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Créatrice - Les Mignonneries de Lola</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="admin-body">
+    <div id="login-screen" class="login-screen">
+        <div class="login-box">
+            <h3><i class="fa-solid fa-lock" style="color: var(--accent-color);"></i> Accès Sécurisé</h3>
+            <p style="margin-top: 10px;">Veuillez entrer votre mot de passe secret.</p>
+            <input type="password" id="admin-password" placeholder="Mot de passe...">
+            <button onclick="checkPassword()" class="btn-primary">Valider</button>
+            <p id="login-error" class="error-msg hidden">Mot de passe incorrect !</p>
+        </div>
+    </div>
+
+    <header class="header" id="admin-header" style="display: none;">
+        <div class="logo">
+            <i class="fa-solid fa-heart" style="color: #ff8b94;"></i> Espace Créatrice
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Retour au site</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="admin-main" id="admin-main" style="display: none;">
+        <div class="admin-container">
+            <h2>Mes Commandes <i class="fa-solid fa-clipboard-list" style="color: var(--accent-color);"></i></h2>
+            <p class="admin-note">Gérez ici toutes les commandes de peluches de vos clients.</p>
+            
+            <div class="filter-controls">
+                <button class="btn-filter active" onclick="filterOrders('Toutes')" id="filter-Toutes">Toutes</button>
+                <button class="btn-filter" onclick="filterOrders('En attente')" id="filter-En attente">En attente</button>
+                <button class="btn-filter" onclick="filterOrders('En cours')" id="filter-En cours">En cours</button>
+                <button class="btn-filter" onclick="filterOrders('Terminé')" id="filter-Terminé">Terminées</button>
+            </div>
+
+            <div id="orders-list" class="orders-list">
+                <!-- Les commandes s'afficheront ici -->
+                <p>Chargement des commandes...</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Mignonneries de Lola - Créations au crochet</title>
+    <meta name="description"
+        content="Découvrez les adorables peluches au crochet faites à la main par Lola. Commandez votre peluche unique !">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Quicksand:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for cute icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <i class="fa-solid fa-heart" style="color: #ff8b94;"></i> Les Mignonneries de Lola
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#couleurs">Couleurs</a></li>
+                <li><a href="#commander" class="btn-primary">Commander</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <h1>Des peluches faites avec <i class="fa-solid fa-heart" style="color: #ff69b4;"></i></h1>
+                <p>Bienvenue dans mon univers doux et coloré ! Je crée des peluches au crochet uniques et adorables,
+                    parfaites pour offrir ou se faire plaisir.</p>
+                <a href="#collection" class="btn-primary btn-large">Découvrir la collection</a>
+            </div>
+            <div class="hero-decorations">
+                <!-- Decorative elements will be styled in CSS -->
+                <div class="blob shape-1"></div>
+                <div class="blob shape-2"></div>
+                <div class="blob shape-3"></div>
+            </div>
+        </section>
+
+        <section id="collection" class="collection">
+            <h2>Ma Collection Mignonne <i class="fa-solid fa-star" style="color: #ffd700;"></i></h2>
+            <p class="colors-desc">Chaque peluche de la collection a une taille fixe pour le moment. Le choix libre des tailles
+                viendra dans le futur, et d'autres peluches seront ajoutees prochainement.</p>
+            <p class="colors-desc">Tarifs de reference : Mini 5€, Petit 8€, Moyen 12€, Grand 15€, Tres grand 18€.</p>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/abeille.jpg" alt="Abeille en peluche">
+                    </div>
+                    <div class="card-content">
+                        <h3>Abeille</h3>
+                        <p>Une petite abeille toute ronde et pleine de douceur. Taille fixe : petite (8€).</p>
+                        <button class="btn-secondary" onclick="selectPlushie('Abeille')">Choisir</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/baleine.jpg" alt="Baleine en peluche">
+                    </div>
+                    <div class="card-content">
+                        <h3>Baleine</h3>
+                        <p>Une baleine moelleuse, parfaite pour les câlins marins. Taille fixe : petite (8€).</p>
+                        <button class="btn-secondary" onclick="selectPlushie('Baleine')">Choisir</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/cochon.jpg" alt="Cochon en peluche">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cochon</h3>
+                        <p>Un petit cochon rose, drôle et attendrissant. Taille fixe : moyenne (12€).</p>
+                        <button class="btn-secondary" onclick="selectPlushie('Cochon')">Choisir</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/demogorgon.jpg" alt="Demogorgon en peluche">
+                    </div>
+                    <div class="card-content">
+                        <h3>Demogorgon</h3>
+                        <p>La version crochet d'un monstre culte, en beaucoup plus mignon. Taille fixe : grande (15€).</p>
+                        <button class="btn-secondary" onclick="selectPlushie('Demogorgon')">Choisir</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/herisson.jpg" alt="Herisson en peluche">
+                    </div>
+                    <div class="card-content">
+                        <h3>Herisson</h3>
+                        <p>Un herisson tout doux qui pique seulement le coeur. Taille fixe : moyenne (12€).</p>
+                        <button class="btn-secondary" onclick="selectPlushie('Herisson')">Choisir</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/lapin.jpg" alt="Lapin en peluche">
+                    </div>
+                    <div class="card-content">
+                        <h3>Lapin</h3>
+                        <p>Un lapin blanc tendre, avec des petites oreilles craquantes. Taille fixe : petite (8€).</p>
+                        <button class="btn-secondary" onclick="selectPlushie('Lapin')">Choisir</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/lune.jpg" alt="Lune en peluche">
+                    </div>
+                    <div class="card-content">
+                        <h3>Lune</h3>
+                        <p>Une jolie lune souriante pour une ambiance douce. Taille fixe : moyenne (12€).</p>
+                        <button class="btn-secondary" onclick="selectPlushie('Lune')">Choisir</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/pingouin.jpg" alt="Pingouin en peluche">
+                    </div>
+                    <div class="card-content">
+                        <h3>Pingouin</h3>
+                        <p>Un pingouin tout rond qui donne le sourire au premier regard. Taille fixe : petite (8€).</p>
+                        <button class="btn-secondary" onclick="selectPlushie('Pingouin')">Choisir</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/raie.jpg" alt="Raie en peluche">
+                    </div>
+                    <div class="card-content">
+                        <h3>Raie</h3>
+                        <p>Une raie bleue trop chou avec un grand sourire. Taille fixe : petite (8€).</p>
+                        <button class="btn-secondary" onclick="selectPlushie('Raie')">Choisir</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/soleil.jpg" alt="Soleil en peluche">
+                    </div>
+                    <div class="card-content">
+                        <h3>Soleil</h3>
+                        <p>Un petit soleil lumineux pour apporter de la bonne humeur. Taille fixe : moyenne (12€).</p>
+                        <button class="btn-secondary" onclick="selectPlushie('Soleil')">Choisir</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/steve-le-poisson.jpg" alt="Steve le poisson en peluche">
+                    </div>
+                    <div class="card-content">
+                        <h3>Steve le Poisson</h3>
+                        <p>Le poisson orange de la collection, fun et original. Taille fixe : moyenne (12€).</p>
+                        <button class="btn-secondary" onclick="selectPlushie('Steve le Poisson')">Choisir</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/tortue.jpg" alt="Tortue en peluche">
+                    </div>
+                    <div class="card-content">
+                        <h3>Tortue</h3>
+                        <p>Une tortue crochet toute douce, calme et trop mignonne. Taille fixe : moyenne (12€).</p>
+                        <button class="btn-secondary" onclick="selectPlushie('Tortue')">Choisir</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="couleurs" class="colors-section">
+            <h2>Mes Couleurs de Pelotes <i class="fa-solid fa-palette" style="color: #ffb6c1;"></i></h2>
+            <p class="colors-desc">Voici les couleurs de fils que j'ai actuellement en stock pour réaliser vos commandes
+                personnalisées :</p>
+            <div class="colors-grid">
+                <div class="color-swatch" style="--swatch-color: #E6192E;" title="Rouge">
+                    <div class="color-circle"></div>
+                    <span>Rouge</span>
+                </div>
+                <div class="color-swatch" style="--swatch-color: #FF9F43;" title="Orange">
+                    <div class="color-circle"></div>
+                    <span>Orange</span>
+                </div>
+                <div class="color-swatch" style="--swatch-color: #FFD700;" title="Jaune">
+                    <div class="color-circle"></div>
+                    <span>Jaune</span>
+                </div>
+                <div class="color-swatch" style="--swatch-color: #76E02D;" title="Vert">
+                    <div class="color-circle"></div>
+                    <span>Vert</span>
+                </div>
+                <div class="color-swatch" style="--swatch-color: #4A90E2;" title="Bleu">
+                    <div class="color-circle"></div>
+                    <span>Bleu</span>
+                </div>
+                <div class="color-swatch" style="--swatch-color: #B993D6;" title="Lavande">
+                    <div class="color-circle"></div>
+                    <span>Lavande</span>
+                </div>
+                <div class="color-swatch" style="--swatch-color: #FF99CC;" title="Rose">
+                    <div class="color-circle"></div>
+                    <span>Rose</span>
+                </div>
+                <div class="color-swatch" style="--swatch-color: #BF7F35;" title="Marron">
+                    <div class="color-circle"></div>
+                    <span>Marron</span>
+                </div>
+                <div class="color-swatch" style="--swatch-color: #E6D5B8;" title="Beige">
+                    <div class="color-circle"></div>
+                    <span>Beige</span>
+                </div>
+                <div class="color-swatch" style="--swatch-color: #ffffff;" title="Blanc">
+                    <div class="color-circle" style="border: 1px solid #ddd;"></div>
+                    <span>Blanc</span>
+                </div>
+                <div class="color-swatch" style="--swatch-color: #8E9294;" title="Gris foncé">
+                    <div class="color-circle"></div>
+                    <span>Gris foncé</span>
+                </div>
+                <div class="color-swatch" style="--swatch-color: #000000;" title="Noir">
+                    <div class="color-circle"></div>
+                    <span>Noir</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="commander" class="order-section">
+            <div class="order-container">
+                <h2>Passer une commande <i class="fa-solid fa-envelope-open-text"></i></h2>
+                <p class="order-note">Remplissez le formulaire ci-dessous pour réserver votre peluche. Le paiement et la
+                    livraison seront organisés ultérieurement lors de nos échanges.</p>
+
+                <form id="orderForm" class="order-form">
+                    <div class="form-group">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
+                    </div>
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label>Peluches choisies</label>
+                        <div class="checkbox-group" id="peluche-group">
+                            <label class="checkbox-label"><input type="checkbox" name="peluche" value="Abeille"
+                                    id="chk-Abeille"> Abeille
+                                <input type="number" class="plushie-qty" min="1" value="1" aria-label="Quantite Abeille"
+                                    style="display: none; margin-left: 8px; width: 70px;"></label>
+                            <label class="checkbox-label"><input type="checkbox" name="peluche" value="Baleine"
+                                    id="chk-Baleine"> Baleine
+                                <input type="number" class="plushie-qty" min="1" value="1" aria-label="Quantite Baleine"
+                                    style="display: none; margin-left: 8px; width: 70px;"></label>
+                            <label class="checkbox-label"><input type="checkbox" name="peluche" value="Cochon"
+                                    id="chk-Cochon"> Cochon
+                                <input type="number" class="plushie-qty" min="1" value="1" aria-label="Quantite Cochon"
+                                    style="display: none; margin-left: 8px; width: 70px;"></label>
+                            <label class="checkbox-label"><input type="checkbox" name="peluche" value="Demogorgon"
+                                    id="chk-Demogorgon"> Demogorgon
+                                <input type="number" class="plushie-qty" min="1" value="1" aria-label="Quantite Demogorgon"
+                                    style="display: none; margin-left: 8px; width: 70px;"></label>
+                            <label class="checkbox-label"><input type="checkbox" name="peluche" value="Herisson"
+                                    id="chk-Herisson"> Herisson
+                                <input type="number" class="plushie-qty" min="1" value="1" aria-label="Quantite Herisson"
+                                    style="display: none; margin-left: 8px; width: 70px;"></label>
+                            <label class="checkbox-label"><input type="checkbox" name="peluche" value="Lapin"
+                                    id="chk-Lapin"> Lapin
+                                <input type="number" class="plushie-qty" min="1" value="1" aria-label="Quantite Lapin"
+                                    style="display: none; margin-left: 8px; width: 70px;"></label>
+                            <label class="checkbox-label"><input type="checkbox" name="peluche" value="Lune"
+                                    id="chk-Lune"> Lune
+                                <input type="number" class="plushie-qty" min="1" value="1" aria-label="Quantite Lune"
+                                    style="display: none; margin-left: 8px; width: 70px;"></label>
+                            <label class="checkbox-label"><input type="checkbox" name="peluche" value="Pingouin"
+                                    id="chk-Pingouin"> Pingouin
+                                <input type="number" class="plushie-qty" min="1" value="1" aria-label="Quantite Pingouin"
+                                    style="display: none; margin-left: 8px; width: 70px;"></label>
+                            <label class="checkbox-label"><input type="checkbox" name="peluche" value="Raie"
+                                    id="chk-Raie"> Raie
+                                <input type="number" class="plushie-qty" min="1" value="1" aria-label="Quantite Raie"
+                                    style="display: none; margin-left: 8px; width: 70px;"></label>
+                            <label class="checkbox-label"><input type="checkbox" name="peluche" value="Soleil"
+                                    id="chk-Soleil"> Soleil
+                                <input type="number" class="plushie-qty" min="1" value="1" aria-label="Quantite Soleil"
+                                    style="display: none; margin-left: 8px; width: 70px;"></label>
+                            <label class="checkbox-label"><input type="checkbox" name="peluche" value="Steve le Poisson"
+                                    id="chk-Steve le Poisson"> Steve le Poisson
+                                <input type="number" class="plushie-qty" min="1" value="1"
+                                    aria-label="Quantite Steve le Poisson"
+                                    style="display: none; margin-left: 8px; width: 70px;"></label>
+                            <label class="checkbox-label"><input type="checkbox" name="peluche" value="Tortue"
+                                    id="chk-Tortue"> Tortue
+                                <input type="number" class="plushie-qty" min="1" value="1" aria-label="Quantite Tortue"
+                                    style="display: none; margin-left: 8px; width: 70px;"></label>
+                            <label class="checkbox-label"><input type="checkbox" name="peluche"
+                                    value="Autre (Sur mesure)" id="chk-Sur mesure"> Autre (Demande sur mesure)
+                                <input type="number" class="plushie-qty" min="1" value="1"
+                                    aria-label="Quantite Sur mesure"
+                                    style="display: none; margin-left: 8px; width: 70px;"></label>
+                        </div>
+                        <p id="qty-info-text" style="display: none; font-size: 0.9em; color: var(--text-light); margin-top: 5px; font-style: italic;">
+                            <i class="fa-solid fa-circle-info"></i> Cochez une peluche pour afficher sa quantite.
+                        </p>
+                    </div>
+                    <div class="form-group" id="custom-size-group" style="display: none;">
+                        <label for="taille">Taille de la peluche</label>
+                        <select id="taille" name="taille">
+                            <option value="" disabled selected>Choisir une taille...</option>
+                            <option value="Mini">Mini</option>
+                            <option value="Petit">Petit</option>
+                            <option value="Moyen">Moyen</option>
+                            <option value="Grand">Grand</option>
+                            <option value="Tres grand">Tres grand</option>
+                        </select>
+                        <p id="sur-mesure-info-text" style="font-size: 0.9em; color: var(--text-light); margin-top: 5px; font-style: italic;">
+                            <i class="fa-solid fa-circle-info"></i> Ce choix de taille apparait uniquement pour les demandes
+                            sur mesure. Le prix est estime selon la taille choisie mais reste non fixe car il peut etre ajuste selon les possibilites de la creatrice.
+                        </p>
+                    </div>
+                    <div class="form-group" id="color-config-group" style="display: none;">
+                        <label>Couleurs par peluche</label>
+                        <div id="color-config-list"></div>
+                        <p id="color-info-text-1" style="font-size: 0.9em; color: var(--text-light); margin-top: 5px; font-style: italic;">
+                            <i class="fa-solid fa-circle-info"></i> Choisissez les couleurs pour chaque peluche (et chaque
+                            exemplaire).
+                        </p>
+                        <p id="color-info-text-2" style="font-size: 0.9em; color: var(--text-light); margin-top: 5px; font-style: italic;">
+                            <i class="fa-solid fa-circle-info"></i> Si vous souhaitez plus de 2 couleurs, indiquez les couleurs
+                            supplementaires dans le champ "Message" en bas du formulaire.
+                        </p>
+                    </div>
+                    <div class="form-group" id="live-total-group" style="display: none;">
+                        <label>Tarif</label>
+                        <p id="live-total-price" style="font-weight: 700; color: var(--accent-color); margin: 0;">
+                            0€
+                        </p>
+                        <p id="live-total-info-text" style="font-size: 0.9em; color: var(--text-light); margin-top: 5px; font-style: italic;">
+                            Le total se met a jour automatiquement selon vos choix.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message ou détails (optionnel)</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Couleurs souhaitées, détails personnalisés..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-submit">Envoyer ma demande <i
+                            class="fa-solid fa-paper-plane"></i></button>
+                </form>
+
+                <div id="successMessage" class="success-message hidden">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>Merci pour votre commande !</h3>
+                    <p>Votre demande a bien été enregistrée. Je vous contacterai très bientôt pour finaliser les
+                        détails.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Les Mignonneries de Lola. Fait avec amour. <i class="fa-solid fa-cat" style="cursor: pointer;"
+                onclick="window.location.href='admin.html'" title="..."></i></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
