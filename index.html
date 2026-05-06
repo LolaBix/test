@@ -38,6 +38,9 @@
                     parfaites pour offrir ou se faire plaisir.</p>
                 <a href="#collection" class="btn-primary btn-large">Découvrir la collection</a>
             </div>
+            <div class="hero-bear" aria-hidden="true">
+                <img src="images/nounous.png" alt="Nounours fait main avec amour">
+            </div>
             <div class="hero-decorations">
                 <!-- Decorative elements will be styled in CSS -->
                 <div class="blob shape-1"></div>
@@ -130,6 +133,16 @@
                         <h3>Pingouin</h3>
                         <p>Un pingouin tout rond qui donne le sourire au premier regard. Taille fixe : petite (8€).</p>
                         <button class="btn-secondary" onclick="selectPlushie('Pingouin')">Choisir</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/poussin.jpg" alt="Poussin en peluche">
+                    </div>
+                    <div class="card-content">
+                        <h3>Poussin</h3>
+                        <p>Un petit poussin tout rond et tout doux. Taille fixe : petite (8€).</p>
+                        <button class="btn-secondary" onclick="selectPlushie('Poussin')">Choisir</button>
                     </div>
                 </div>
                 <div class="card">
@@ -280,6 +293,10 @@
                             <label class="checkbox-label"><input type="checkbox" name="peluche" value="Pingouin"
                                     id="chk-Pingouin"> Pingouin
                                 <input type="number" class="plushie-qty" min="1" value="1" aria-label="Quantite Pingouin"
+                                    style="display: none; margin-left: 8px; width: 70px;"></label>
+                            <label class="checkbox-label"><input type="checkbox" name="peluche" value="Poussin"
+                                    id="chk-Poussin"> Poussin
+                                <input type="number" class="plushie-qty" min="1" value="1" aria-label="Quantite Poussin"
                                     style="display: none; margin-left: 8px; width: 70px;"></label>
                             <label class="checkbox-label"><input type="checkbox" name="peluche" value="Raie"
                                     id="chk-Raie"> Raie

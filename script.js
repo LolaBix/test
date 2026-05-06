@@ -166,6 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Lune': 'Moyenne',
         'Soleil': 'Moyenne',
         'Pingouin': 'Petite',
+        'Poussin': 'Petite',
         'Tortue': 'Moyenne',
         'Raie': 'Petite',
         'Steve le Poisson': 'Moyenne'
@@ -180,6 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Lune': 12,
         'Soleil': 12,
         'Pingouin': 8,
+        'Poussin': 8,
         'Tortue': 12,
         'Raie': 8,
         'Steve le Poisson': 12
